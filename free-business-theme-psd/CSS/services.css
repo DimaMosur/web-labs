@@ -1,0 +1,109 @@
+/* Services Section */
+.service__inner-body {
+    margin: 203px 0 93px 0;
+    text-align: center;
+    color: #394b50;
+}
+
+.service__inner-body-title {
+    font-size: 30px;
+    line-height: 22px;
+    padding: 0 0 10px 0;
+}
+
+.service__inner-body-subtitle {
+    font-weight: 400;
+}
+
+.service__inner-columns {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 0px -38px;
+}
+
+.service__inner-columns-column {
+    flex: 0 1 50%;
+    padding: 0 38px;
+}
+
+.service__inner-columns-column-item-row {
+    display: flex;
+    margin-bottom: 79px;
+}
+
+.service__inner-columns-column-item-row-img {
+    flex: 0 0 auto;
+    margin-right: 82px;
+}
+
+.service__inner-columns-column-item-row-img img {
+    width: 60px;
+    height: 60px;
+}
+
+.service__inner-columns-column-item-row-body {
+    flex: 1 1 auto;
+}
+
+.service__inner-columns-column-item-row-body-title {
+    margin: 0 0 21px 0;
+    font-family: "Lato";
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+}
+
+.service__inner-columns-column-item-row-body-text {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 22px;
+    color: #7b7b7b;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .service__inner-body {
+        margin: 80px 0 60px 0;
+    }
+
+    .service__inner-columns {
+        margin: 0 -15px;
+    }
+
+    .service__inner-columns-column {
+        flex: 0 1 100%;
+        padding: 0 15px;
+    }
+
+    .service__inner-columns-column-item-row {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .service__inner-columns-column-item-row-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .service__inner-body {
+        margin: 60px 0 40px 0;
+    }
+
+    .service__inner-columns-column-item-row {
+        margin-bottom: 40px;
+    }
+
+    .service__inner-columns-column-item-row-body-title {
+        font-size: 14px;
+    }
+
+    .service__inner-columns-column-item-row-body-text {
+        font-size: 12px;
+    }
+}

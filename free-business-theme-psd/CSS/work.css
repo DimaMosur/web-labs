@@ -1,0 +1,162 @@
+/* How It Works Section */
+.work {
+    font-family: "Lato";
+    padding: 80px 0;
+}
+
+.work__body {
+    margin: 75px 0 110px 0;
+    text-align: center;
+    color: #394b50;
+}
+
+.work__title {
+    font-size: 30px;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+
+.work__subtitle {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.work__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.work__column {
+    flex: 0 1 25%;
+    margin: 0 0 108px 0;
+}
+
+.work__column-2 {
+    margin: -5px 0 103px 0;
+}
+
+.work__item {
+    text-align: center;
+    max-width: 215px;
+    margin: 0 auto;
+}
+
+.item__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item__img,
+.item__img-4 {
+    margin: 0 0 100px 0;
+}
+
+.item__img-4 {
+    margin: 0 0 94px 0;
+}
+
+.item__img img,
+.item__img-4 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item__body {
+    line-height: 22px;
+}
+
+.item__title {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #394b50;
+}
+
+.item__text {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    color: #7b7b7b;
+}
+
+.work__btn {
+    text-align: center;
+    margin: 0 0 88px 0;
+}
+
+.work__btn a {
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px 28px;
+    background-color: #ffbb42;
+    transition: .2s;
+    display: inline-block;
+}
+
+.work__btn a:hover {
+    box-shadow: 0 0 0 2px #ffbb42;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .work {
+        padding: 60px 0;
+    }
+
+    .work__body {
+        margin: 40px 0 60px 0;
+    }
+
+    .work__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work__column {
+        flex: none;
+        margin: 0 0 60px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .work__column-2 {
+        margin: 0 0 60px 0;
+    }
+
+    .item__img,
+    .item__img-4 {
+        margin: 0 0 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .work__body {
+        margin: 30px 0 40px 0;
+    }
+
+    .work__column {
+        margin: 0 0 40px 0;
+    }
+
+    .item__title {
+        font-size: 18px;
+    }
+
+    .item__text {
+        font-size: 12px;
+    }
+
+    .work__btn {
+        margin: 0 0 40px 0;
+    }
+
+    .work__btn a {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+}

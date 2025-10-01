@@ -1,0 +1,152 @@
+/* Clients Section */
+.clients {
+    background-color: #ffc155;
+    padding: 0 0 140px 0;
+}
+
+.clients__body {
+    padding: 141px 0 0 0;
+    text-align: center;
+    color: #fff;
+    margin: 0 0 58px 0;
+}
+
+.clients__title {
+    font-size: 30px;
+    line-height: 22px;
+    margin: 0 0 10px 0;
+}
+
+.clients__subtitle {
+    font-weight: 400;
+}
+
+.clients__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -18px 0 0;
+}
+
+.clients__column {
+    padding: 0 18px;
+    margin: 0 0 20px 0;
+    flex: 0 1 50%;
+}
+
+.clients__item {
+    background-color: #fff;
+    padding: 43px 41px 51px 30px;
+    height: 100%;
+}
+
+.clients-item__row {
+    display: flex;
+    height: 100%;
+}
+
+.clients-item__img {
+    flex-shrink: 0;
+}
+
+.clients-item__img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.clients-item__body {
+    margin: 0 0 0 31px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clients-item__text {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 22px;
+    color: #7b7b7b;
+    margin: 0 0 29px 0;
+}
+
+.clients-item__author {
+    display: flex;
+    margin: 0 0 0 2px;
+    font-family: "Lato";
+    text-transform: uppercase;
+    gap: 5px;
+}
+
+.clients-item__author p:first-child {
+    color: #f6772c;
+}
+
+.clients-item__author p:last-child {
+    color: #99a9ae;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .clients {
+        padding: 0 0 80px 0;
+    }
+
+    .clients__body {
+        padding: 80px 0 0 0;
+        margin: 0 0 40px 0;
+    }
+
+    .clients__row {
+        margin: 0;
+    }
+
+    .clients__column {
+        flex: 0 1 100%;
+        padding: 0;
+        margin: 0 0 20px 0;
+    }
+
+    .clients-item__row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .clients-item__img {
+        align-self: center;
+        margin-bottom: 20px;
+    }
+
+    .clients-item__body {
+        margin: 0;
+        text-align: center;
+    }
+
+    .clients-item__author {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .clients {
+        padding: 0 0 60px 0;
+    }
+
+    .clients__body {
+        padding: 60px 0 0 0;
+    }
+
+    .clients__item {
+        padding: 30px 20px;
+    }
+
+    .clients-item__text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .clients-item__author {
+        font-size: 12px;
+    }
+}

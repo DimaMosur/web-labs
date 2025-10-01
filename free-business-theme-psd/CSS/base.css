@@ -1,0 +1,59 @@
+/* Base Layout and Typography */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.title {
+    font-family: "Arial";
+    font-size: 35px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+}
+
+.subtitle {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 300;
+}
+
+/* Mobile Responsiveness for Base Elements */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .title {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+}

@@ -1,0 +1,83 @@
+/* Main CSS File - Import all modules */
+@import url('reset.css');
+@import url('base.css');
+@import url('header.css');
+@import url('intro.css');
+@import url('services.css');
+@import url('about.css');
+@import url('pricing.css');
+@import url('work.css');
+@import url('clients.css');
+@import url('contact.css');
+@import url('footer.css');
+
+/* Additional responsive utilities */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* Utility classes for mobile */
+.mobile-hidden {
+    display: block;
+}
+
+.mobile-visible {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-visible {
+        display: block;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improved button and form interactions */
+button, input[type="submit"] {
+    transition: all 0.3s ease;
+}
+
+button:active, input[type="submit"]:active {
+    transform: translateY(1px);
+}
+
+/* Enhanced image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus, input:focus {
+    outline: 2px solid #ffbb42;
+    outline-offset: 2px;
+}

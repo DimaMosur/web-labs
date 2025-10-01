@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжкова колекція</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📚 Книжкова колекція</h1>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="🔍 Пошук за автором..." />
+        <button id="sortBtn">🔃 Сортувати за ціною</button>
+        <button id="totalBtn">💰 Загальна вартість</button>
+    </div>
+
+    <form id="addBookForm">
+        <h2>➕ Додати нову книгу</h2>
+        <input type="text" id="authorInput" placeholder="Автор" required />
+        <input type="number" id="pagesInput" placeholder="Кількість сторінок" required min="1" />
+        <input type="number" id="priceInput" placeholder="Ціна (₴)" required min="0" step="0.01" />
+        <button type="submit">Додати</button>
+    </form>
+
+    <div id="bookList"></div>
+    <p id="totalPrice"></p>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
