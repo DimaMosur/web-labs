@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжкова колекція - Створення та Редагування</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>📚 Книжкова колекція</h1><x></x>
+
+    <div class="controls">
+        <input type="text" id="searchInput" placeholder="🔍 Пошук за автором..." />
+        <button id="sortBtn">🔃 Сортувати за ціною</button>
+        <button id="totalBtn">💰 Загальна вартість</button>
+        <button id="createBtn" class="create-btn">➕ Створити книгу</button>
+    </div>
+
+    <div id="bookList"></div>
+    <p id="totalPrice"></p>
+</div>
+
+<!-- Modal Window -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="modalTitle">➕ Створити нову книгу</h2>
+            <span class="close">&times;</span>
+        </div>
+        <form id="bookForm">
+            <div class="form-group">
+                <label for="modalAuthorInput">Автор:</label>
+                <input type="text" id="modalAuthorInput" placeholder="Введіть ім'я автора" required />
+            </div>
+            <div class="form-group">
+                <label for="modalPagesInput">Кількість сторінок:</label>
+                <input type="number" id="modalPagesInput" placeholder="Введіть кількість сторінок" required min="1" />
+            </div>
+            <div class="form-group">
+                <label for="modalPriceInput">Ціна (₴):</label>
+                <input type="number" id="modalPriceInput" placeholder="Введіть ціну" required min="0" step="0.01" />
+            </div>
+            <div class="form-actions">
+                <button type="submit" id="submitBtn" class="submit-btn">Створити</button>
+                <button type="button" id="cancelBtn" class="cancel-btn">Скасувати</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Success/Error Messages -->
+<div id="messageContainer"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
