@@ -1,0 +1,38 @@
+.navigation {
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #666;
+}
+
+.nav-item:hover {
+    background: #f8f9fa;
+    color: #667eea;
+}
+
+.nav-item.active {
+    color: #667eea;
+    border-bottom: 3px solid #667eea;
+}
