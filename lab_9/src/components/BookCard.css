@@ -1,0 +1,79 @@
+.book-card {
+    background: linear-gradient(135deg, #e8f0fe 0%, #f1f8ff 100%);
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-color: #667eea;
+}
+
+.book-cover {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.book-icon {
+    font-size: 80px;
+}
+
+.book-author {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.book-pages {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.book-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.book-price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.book-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.details-btn,
+.add-to-cart-btn {
+    flex: 1;
+    min-width: 100px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.details-btn {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+    color: white;
+}
+
+.add-to-cart-btn {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    color: white;
+}
+
+.details-btn:hover,
+.add-to-cart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}

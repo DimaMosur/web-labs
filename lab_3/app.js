@@ -19,7 +19,6 @@ const searchInput = document.getElementById("searchInput");
 const sortBtn = document.getElementById("sortBtn");
 const totalBtn = document.getElementById("totalBtn");
 const totalPrice = document.getElementById("totalPrice");
-
 const addBookForm = document.getElementById("addBookForm");
 const authorInput = document.getElementById("authorInput");
 const pagesInput = document.getElementById("pagesInput");

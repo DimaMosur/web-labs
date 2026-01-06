@@ -1,0 +1,49 @@
+.featured-books {
+    background: white;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Error message */
+.featured-error {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #ffe5e5 0%, #ffebeb 100%);
+    border-radius: 12px;
+    border: 2px solid #ff6b6b;
+}
+
+.featured-error p {
+    font-size: 1.1em;
+    color: #e03131;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .featured-books {
+        padding: 20px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .books-grid {
+        grid-template-columns: 1fr;
+    }
+}
